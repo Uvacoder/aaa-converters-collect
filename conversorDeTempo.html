@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Conversor Multifuncional</title>
+        <script src="my_pattern.js"></script>
+        <script src="util.js"></script>
+        <script src="storage_utils.js"></script>
+        <script src="conversorDeTempo.js"></script>
+    </head>
+    <body>
+        <hr>
+        <h1><center><mark>Conversor Multifuncional</mark></center></h1>
+        <hr>
+
+        <section id="idAreaMenu" style="text-align: center; height: 550px ; width: 100px ; position: absolute">
+            
+            <fieldset>
+                <legend>Menu</legend>
+                <br>
+                <p><input type="submit" id="idInicio" value="Inicio"></p>
+                <p><input type="submit" id="idConversorBinario" value="Conversor Binário" size="100"></p>
+                <p><input type="submit" id="idConversorTempo" value="Conversor de Tempo"></p>
+                <p><input type="submit" id="idConversorPeso" value="Conversor de Peso"></p>
+                <p><input type="submit" id="idConversorTamanho" value="Conversor de Tamanho"></p>
+                <p><input type="submit" id="idConversorASCII" value="Conversor de ASCII/Text"></p>
+                <p><input type="submit" id="idReverseText" value="Reverse Text"></p>
+                <p><input type="submit" id="idReverseWord" value="Reverse word"></p>
+            </fieldset>
+        </section>
+
+
+        <section id="idAreaConversor" style="margin-left: 350px ; margin-top: 10px">
+            <h3>Conversor de Tempo</h3>
+            <label for="idDe">De</label>
+            <select id="idDe">
+                    <option value="1">MiliSegundos</option>
+                    <option value="2">Segundos</option>
+                    <option value="3">Minutos</option>
+                    <option value="4">Horas</option>
+                    <option value="5">Dias</option>
+                    <option value="6">Anos</option>
+                    <option value="7">Decadas</option>
+                    <option  value="8">Séculos</option> 
+            </select>
+            <p><input type="number" id="idTextInput" min="1" max="999999" step="1" size="32" value="0">
+            <p><input type="submit" id="idSubmeter" value="CONVERTER">
+            <p>
+            <label for="idPara">Para</label>
+            <select id="idPara">
+                    <option value="1">MiliSegundos</option>
+                    <option value="2">Segundos</option>
+                    <option value="3">Minutos</option>
+                    <option value="4">Horas</option>
+                    <option value="5">Dias</option>
+                    <option value="6">Anos</option>
+                    <option value="7">Decadas</option>
+                    <option  value="8">Séculos</option>
+            </select>
+            <p>
+            <textarea name="message" id="idTextResposta" rows="1" cols="6" placeholder="Resultado"></textarea>
+        </section>
+    </body>
+</html>
